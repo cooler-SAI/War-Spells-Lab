@@ -1,0 +1,149 @@
+ public enum Stats
+    {
+        //===================================
+        // BEGIN BASE STATS
+        //===================================
+
+        None = 0,
+        Strength = 1,
+        Agility = 2,
+        Willpower = 3,
+        Toughness = 4,
+        Wounds = 5,
+        Initiative = 6,
+        WeaponSkill = 7,
+        BallisticSkill = 8,
+        Intelligence = 9,
+        // Defensive stats - NOT USED.
+        BlockSkill = 10,
+        ParrySkill = 11,
+        EvadeSkill = 12,
+        DisruptSkill = 13,
+        // Resists
+        SpiritResistance = 14,
+        ElementalResistance = 15,
+        CorporealResistance = 16,
+
+        BaseStatCount = 21,
+
+        //===================================
+        // END BASE STATS
+        //===================================
+
+        // Damage
+        IncomingDamage = 22,
+        IncomingDamagePercent = 23, // M
+        OutgoingDamage = 24,
+        OutgoingDamagePercent = 25, // M
+
+        Armor = 26,
+        Velocity = 27, // M
+        // THESE ARE THE ONES THAT ARE USED
+        Block = 28,
+        Parry = 29,
+        Evade = 30,
+        Disrupt = 31,
+
+        ActionPointRegen = 32, // M
+        MoraleRegen = 33, // M
+        Cooldown = 34,
+        BuildTime = 35, // M
+        CriticalDamage = 36, // M
+        Range = 37,
+        AutoAttackSpeed = 38, // M
+        Radius = 39,
+        AutoAttackDamage = 40,
+        ActionPointCost = 41, // M
+
+        CriticalHitRate = 42,
+        CriticalDamageTaken = 43,
+
+        EffectResist = 44,
+        EffectBuff = 45,
+        MinimumRange = 46,
+        DamageAbsorb = 47,
+
+        // Setback
+        SetbackChance = 48, // M
+        SetbackValue = 49,
+
+        // Mob stuff
+        XPWorth = 50,
+        RenownWorth = 51,
+        InfluenceWorth = 52,
+        MonetaryWorth = 53,
+        AggroRadius = 54,
+
+        TargetDuration = 55,
+        Specialization = 56,
+
+        GoldLooted = 57,
+        XpReceived = 58,
+
+        // Trade skills
+        Butchering = 59,
+        Scavenging = 60,
+        Cultivation = 61,
+        Apothecary = 62,
+        TalismanMaking = 63,
+        Salvaging = 64,
+
+        // Stealth
+        Stealth = 65,
+        StealthDetection = 66,
+
+        // Hate
+        HateCaused = 67, // M
+        HateReceived = 68, // M
+
+        OffhandProcChance = 69, // M
+        OffhandDamage = 70,
+
+        RenownReceived = 71,
+        InfluenceReceived = 72,
+
+        DismountChance = 73,
+        Gravity = 74,
+        LevitationHeight = 75,
+
+        MeleeCritRate = 76,
+        RangedCritRate = 77,
+        MagicCritRate = 78,
+
+        HealthRegen = 79, // M
+
+        MeleePower = 80,
+        RangedPower = 81,
+        MagicPower = 82,
+
+        ArmorPenetrationReduction = 83,
+        CriticalHitRateReduction = 84,
+        // Strikethrough
+        BlockStrikethrough = 85,
+        ParryStrikethrough = 86,
+        EvadeStrikethrough = 87,
+        DisruptStrikethrough = 88,
+
+        HealCritRate = 89,
+
+        MaxActionPoints = 90, // RB   4/17/2016
+
+        Mastery1Bonus = 91, // RB   4/9/2016 
+        Mastery2Bonus = 92, // RB   4/9/2016
+        Mastery3Bonus = 93, // RB   4/9/2016
+        HealingPower = 94,
+        InteractTime = 95,
+
+        //own hope they work
+        OutgoingHealPercent = 100,
+        SnareDuration = 101,
+        KnockdownDuration = 102,
+        IncomingHealPercent = 103,
+        IncomingMeleeDamage = 104,
+        IncomingRangedDamage = 105,
+        IncomingMagicDamage = 106,
+
+        ArmorPenetration = 107,
+
+        MaxStatCount = 108
+    };
