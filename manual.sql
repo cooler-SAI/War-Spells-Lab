@@ -1080,6 +1080,71 @@ INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creatu
         Siege = 64,
         SiegeCannon = 68
     };
+	creature_proto Title!!!!
+	                    switch (proto.Title)
+                    {
+                        case 1:
+                        case 2:
+                        case 40:
+                        case 144: // Career Trainer
+                            proto.FigLeafData = new byte[] { 0, 0, 0, 1, 1, 10 };
+                            break;
+                        case 17: // Rally Master
+                            byte chapterId = (byte)ChapterService.GetChapterByNPCID(proto.Entry);
+                            if (chapterId > 0)
+                                proto.FigLeafData = new byte[] { 0, 0, 0, 3, 0, chapterId, 1, 10 };
+                            else
+                                proto.FigLeafData = _defaultData;
+                            break;
+                        case 4: // Trade skill start
+                        case 5:
+                        case 6:
+                        case 7:
+                        case 8:
+                        case 9: // Trade skill end
+                        case 18: // Flight Master
+                        case 20: // Healer
+                        case 32: // Kill collector
+                            proto.FigLeafData = new byte[] { 0, 0, 0, 3, 1, 10 };
+                            break;
+                        default:
+                            proto.FigLeafData = _defaultData;
+                            break;
+							
+							
+							    public enum CreatureState
+    {STATE!!!
+        Merchant = 0,
+        SkillTrainer = 1,
+        KillCollector = 2,
+        Dead = 3,
+        QuestFinishable = 4,
+        QuestAvailable = 5,
+        RepeatableQuestAvailable = 6,
+        QuestInProgress = 7,
+        Lootable = 8,
+        // 9 and 10 do not appear in logs
+        Banker = 11,
+        Auctioneer = 12,
+        Influence = 13,
+        GuildRegistrar = 14,
+        FlightMaster = 15,
+        RallyMasterIcon = 16,
+        Healer = 17,
+        RvRFlagged = 18,
+        // 19 and 20 do not appear in logs
+        Butcherable = 21,
+        Scavengeable = 22,
+        StandardBanner = 23,
+        Effects = 24,
+        UnkOmnipresent = 25,
+        DyeMerchant = 26,
+        NameRegistrar = 27,
+        ConsistentAppearance = 28,
+        PhysicalEffects = 29, // when set, fig leaf data is very long... probably reads some stuff for modifying appearance to be "special" - traits, perhaps? set on player corpses
+        // 30 does not appear in logs
+        QuestEventAvailable = 32
+		
 
 
 --bullet
