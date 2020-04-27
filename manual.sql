@@ -951,7 +951,7 @@ DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
 (@PROTOENTRY,'12301','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
 
--- Nibbling Bite (Nibling)
+-- Nibbling Bite (Nurgling)
 SET @PROTOENTRY := xxxxx;
 DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
@@ -1465,14 +1465,17 @@ INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creatu
 
 
 
+EMOTES:
 
+103 - Mining
 
+51 - sit on ground
 
+49 - kneel
 
+117 - sit on chair
 
-
-
-
+12 - kick
 
 
 
