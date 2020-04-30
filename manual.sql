@@ -1477,9 +1477,9 @@ EMOTES:
 
 12 - kick
 
+43 - fix something
 
-
-
+39 - dying
 
 
 
