@@ -25,7 +25,7 @@ INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creatu
 
 ## Ghost ##
 
-## Human (Chaos/Empire/Greenskins/Dwarfs/Mobs) ##
+## Human (Chaos/Empire/Greenskins/Dwarfs/Elves/Dark Elves/Mobs) ##
 
 ### Dwarf ###
 -- Spanner Swipe (Dwarf ENGINEER Melee)
@@ -434,6 +434,13 @@ INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creatu
 (@PROTOENTRY,'1745','10',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
 
 ### Orc ###
+### Empire ###
+
+-- Slasha (Empire KNIGHT OF THE BLAZING SUN Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'1745','10',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
 
 -- Poison Arrow (Bandit)
 SET @PROTOENTRY := xxxxx;
