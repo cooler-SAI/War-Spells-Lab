@@ -1481,12 +1481,23 @@ EMOTES:
 
 39 - dying
 
+104 - talking
 
 
 
+realm (1 - Order, 2 - Dest)
 
 
 
+.invincible
+.fly 1 // press # to activate space bar for up z down
+.mod speed 500
+.gps
+
+TELEPORTS
+TOVL .teleport map 179 343192 277073 14564
+bastion stair .teleport map 103 1472722 814047 16139
+MOUNT GUNBAD .teleport map 2 1241484 897025 7532
 
 
 
