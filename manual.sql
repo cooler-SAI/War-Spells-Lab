@@ -1490,7 +1490,7 @@ EMOTES:
 
 104 - talking
 
-
+123- levitation
 
 realm (1 - Order, 2 - Dest)
 
