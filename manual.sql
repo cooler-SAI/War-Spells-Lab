@@ -1492,6 +1492,10 @@ EMOTES:
 
 123- levitation
 
+55 - Sleeping
+
+78 - funny Goblin
+
 realm (1 - Order, 2 - Dest)
 
 
