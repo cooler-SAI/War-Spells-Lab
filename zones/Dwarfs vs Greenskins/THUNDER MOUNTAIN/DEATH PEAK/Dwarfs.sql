@@ -181,79 +181,80 @@ DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
 (@PROTOENTRY,'12161','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+SET @PROTOENTRY := 15679;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'12151','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+SET @PROTOENTRY := 15688;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'12261','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+SET @PROTOENTRY := 7870;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'12441','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+SET @PROTOENTRY := 41585;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'12402','30',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+SET @PROTOENTRY := 40847;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'12441','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+SET @PROTOENTRY := 40858;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'12511','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+SET @PROTOENTRY := 40827;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8159','0',@PROTOENTRY,'','0','0','0','1','1','1','0','4',NULL); 
+UPDATE `war_world`.`creature_protos` SET `Ranged` = '100' WHERE `Entry` = @PROTOENTRY; 
+
+SET @PROTOENTRY := 11227;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'12221','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL);
+
+SET @PROTOENTRY := 11223;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'12521','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL),
+(@PROTOENTRY,'5243','12',1122301,'','0','0','0','1','1','0','0','4',NULL); 
+
+SET @PROTOENTRY := 15682;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'49','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+SET @PROTOENTRY := 15682;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'437','7',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+SET @PROTOENTRY := 11226;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'606','60',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+SET @PROTOENTRY := 15687;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'1355','10',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL);
+
+SET @PROTOENTRY := 11222;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'1586','0',@PROTOENTRY,'','0','0','0','1','1','1','0','4',NULL); 
+UPDATE `war_world`.`creature_protos` SET `Ranged` = '100' WHERE `Entry` = @PROTOENTRY; 
+
+SET @PROTOENTRY := 11228;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'1355','10',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL);
