@@ -1496,6 +1496,8 @@ EMOTES:
 
 78 - funny Goblin
 
+150  - reading book and talk
+
 realm (1 - Order, 2 - Dest)
 
 
