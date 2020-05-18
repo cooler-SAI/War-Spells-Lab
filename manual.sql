@@ -1484,6 +1484,8 @@ EMOTES:
 
 12 - kick
 
+4 - funny goblin CHEER!!
+
 43 - fix something
 
 39 - dying
