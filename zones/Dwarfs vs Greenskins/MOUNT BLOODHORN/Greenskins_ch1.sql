@@ -149,7 +149,7 @@ INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creatu
 SET @PROTOENTRY := 2102;
 DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
-(@PROTOENTRY,'12341','10',@PROTOENTRY,'','0','0','0','1','1','0','0','0',NULL); 
+(@PROTOENTRY,'435','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL);
 
 SET @PROTOENTRY := 2139;
 DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
