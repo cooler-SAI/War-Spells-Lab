@@ -375,7 +375,7 @@ INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creatu
 SET @PROTOENTRY := xxxxx;
 DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
-(@PROTOENTRY,'8548','0',@PROTOENTRY,'','0','0','0','1','1','1','0','4',NULL); 
+(@PROTOENTRY,'1665','0',@PROTOENTRY,'','0','0','0','1','1','1','0','4',NULL); 
 UPDATE `war_world`.`creature_protos` SET `Ranged` = '65' WHERE `Entry` = @PROTOENTRY; 
 
 -- Trip 'Em Up (Orc BLACK Melee)
@@ -434,9 +434,905 @@ INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creatu
 (@PROTOENTRY,'1745','10',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
 
 ### Orc ###
+### Chaos ###
+
+-- Scourge (Chaos ZEALOT Range )
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8548','0',@PROTOENTRY,'','0','0','0','1','1','1','0','4',NULL); 
+UPDATE `war_world`.`creature_protos` SET `Ranged` = '100' WHERE `Entry` = @PROTOENTRY; 
+
+-- Warp Reality (Chaos ZEALOT Debuff)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8553','30',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Tzeentch's Cry (Chaos ZEALOT Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8568','30',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Rite of Agony (Chaos ZEALOT Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8552','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Tzeentch's Cordial (Chaos ZEALOT Heal)
+SET @PROTOENTRY := xxxxx; 
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8558','0',@PROTOENTRY,'','0','30','0','0','1','0','0','1',NULL);
+
+-- Flash of Chaos (Chaos ZEALOT Heal)
+SET @PROTOENTRY := xxxxx; 
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8569','0',@PROTOENTRY,'','0','30','0','0','1','0','0','1',NULL);
+
+-- Dark Medicine (Chaos ZEALOT Heal)
+SET @PROTOENTRY := xxxxx; 
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8549','0',@PROTOENTRY,'','0','30','0','0','1','0','0','1',NULL);
+
+-- Veil of Chaos (Chaos ZEALOT Buff)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8564','0',@PROTOENTRY,'','0','0','0','0','1','1','0','1',NULL); 
+
+-- Mark of Daemonic Fury (Chaos ZEALOT Buff)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8551','0',@PROTOENTRY,'','0','0','0','0','1','1','0','1',NULL); 
+
+-- Enraged Blow (Chaos CHOSEN Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8315','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Seeping Wound (Chaos CHOSEN Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8320','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Dizzying Blow (Chaos CHOSEN Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8324','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Cleave (Chaos CHOSEN Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8319','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Ravage (Chaos CHOSEN Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8323','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Blast Wave (Chaos CHOSEN Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8331','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Withering Blow (Chaos CHOSEN Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8328','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Repel (Chaos CHOSEN Melee Shield)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8329','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Throwing Axe (Chaos CHOSEN Range 65ft)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8314','0',@PROTOENTRY,'','0','0','0','1','1','1','0','4',NULL); 
+UPDATE `war_world`.`creature_protos` SET `Ranged` = '65' WHERE `Entry` = @PROTOENTRY; 
+
+-- Flickering Red Fire (Chaos MAGUS Range )
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8470','0',@PROTOENTRY,'','0','0','0','1','1','1','0','4',NULL); 
+UPDATE `war_world`.`creature_protos` SET `Ranged` = '100' WHERE `Entry` = @PROTOENTRY; 
+
+-- Surging Violet Fire (Chaos MAGUS Range )
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8479','0',@PROTOENTRY,'','0','0','0','1','1','1','0','4',NULL); 
+UPDATE `war_world`.`creature_protos` SET `Ranged` = '100' WHERE `Entry` = @PROTOENTRY; 
+
+-- Rend Winds (Chaos MAGUS Range )
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8471','0',@PROTOENTRY,'','0','0','0','1','1','1','0','4',NULL); 
+UPDATE `war_world`.`creature_protos` SET `Ranged` = '65' WHERE `Entry` = @PROTOENTRY; 
+
+-- Warping Blast (Chaos MAGUS Range )
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8483','0',@PROTOENTRY,'','0','0','0','1','1','1','0','4',NULL); 
+UPDATE `war_world`.`creature_protos` SET `Ranged` = '65' WHERE `Entry` = @PROTOENTRY; 
+
+-- Glean Magic (Chaos MAGUS Debuff)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8482','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Surge of Insanity (Chaos MAGUS on Close)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8475','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Infernal Blast (Chaos MAGUS on Close)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8487','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Daemonic Lash (Chaos MAGUS on Close)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8472','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Charge! ( Chaos MARAUDER Buff on Aggro )
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'240','0',@PROTOENTRY,'','0','0','0','0','1','1','0','1',NULL); 
+
+-- Debilitate (Chaos MARAUDER Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8396','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Corruption (Chaos MARAUDER Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8400','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Flail (Chaos MARAUDER Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8392','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Throw Axe (Chaos MARAUDER Range 65ft)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8393','0',@PROTOENTRY,'','0','0','0','1','1','1','0','4',NULL); 
+UPDATE `war_world`.`creature_protos` SET `Ranged` = '65' WHERE `Entry` = @PROTOENTRY; 
+
+-- Wave of Horror (Chaos MARAUDER Debuff)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8402','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Mutating Release (Chaos MARAUDER Heal)
+SET @PROTOENTRY := xxxxx; 
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8408','0',@PROTOENTRY,'','0','30','0','0','1','0','0','1',NULL);
+
+### Chaos ###
 ### Empire ###
 
--- Slasha (Empire KNIGHT OF THE BLAZING SUN Melee)
+-- Fireball (Empire BRIGHT WIZARD Range )
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8159','0',@PROTOENTRY,'','0','0','0','1','1','1','0','4',NULL); 
+UPDATE `war_world`.`creature_protos` SET `Ranged` = '100' WHERE `Entry` = @PROTOENTRY; 
+
+-- Sear (Empire BRIGHT WIZARD Range )
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8160','0',@PROTOENTRY,'','0','0','0','1','1','1','0','4',NULL); 
+UPDATE `war_world`.`creature_protos` SET `Ranged` = '100' WHERE `Entry` = @PROTOENTRY; 
+
+-- Fiery Blast (Empire BRIGHT WIZARD Range )
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8166','0',@PROTOENTRY,'','0','0','0','1','1','1','0','4',NULL); 
+UPDATE `war_world`.`creature_protos` SET `Ranged` = '80' WHERE `Entry` = @PROTOENTRY; 
+
+-- Flames of Rhuin ( Empire BRIGHT WIZARD Buff on Aggro )
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8164','0',@PROTOENTRY,'','0','0','0','0','1','1','0','1',NULL); 
+
+-- Flame Shield ( Empire BRIGHT WIZARD Buff on Aggro )
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8161','0',@PROTOENTRY,'','0','0','0','0','1','1','0','1',NULL); 
+
+-- Pyroclastic Surge (Empire BRIGHT WIZARD Range )
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8169','0',@PROTOENTRY,'','0','0','0','1','1','1','0','4',NULL); 
+UPDATE `war_world`.`creature_protos` SET `Ranged` = '100' WHERE `Entry` = @PROTOENTRY; 
+
+-- Burning Iron (Empire BRIGHT WIZARD Range )
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8173','0',@PROTOENTRY,'','0','0','0','1','1','1','0','4',NULL); 
+UPDATE `war_world`.`creature_protos` SET `Ranged` = '100' WHERE `Entry` = @PROTOENTRY; 
+
+-- Ignite (Empire BRIGHT WIZARD Range )
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8158','0',@PROTOENTRY,'','0','0','0','1','1','1','0','4',NULL); 
+UPDATE `war_world`.`creature_protos` SET `Ranged` = '100' WHERE `Entry` = @PROTOENTRY; 
+
+-- Boiling Blood (Empire BRIGHT WIZARD Range )
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8165','0',@PROTOENTRY,'','0','0','0','1','1','1','0','4',NULL); 
+UPDATE `war_world`.`creature_protos` SET `Ranged` = '100' WHERE `Entry` = @PROTOENTRY;
+
+-- Scorched Earth (Empire BRIGHT WIZARD on Close)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8163','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Flame Breath (Empire BRIGHT WIZARD on Close)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8171','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Press The Attack! ( Empire KNIGHT OF THE BLAZING SUN Buff on Aggro )
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8004','0',@PROTOENTRY,'','0','0','0','0','1','1','0','1',NULL); 
+
+-- Precision Strike (Empire KNIGHT OF THE BLAZING SUN Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8005','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Crippling Blow (Empire KNIGHT OF THE BLAZING SUN Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8012','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Shining Blade (Empire KNIGHT OF THE BLAZING SUN Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8035','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Sunder (Empire KNIGHT OF THE BLAZING SUN Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8002','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Blazing Blade (Empire KNIGHT OF THE BLAZING SUN Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8007','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Vicious Slash (Empire KNIGHT OF THE BLAZING SUN Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8009','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Stand Strong! (Empire KNIGHT OF THE BLAZING SUN Debuff)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8006','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Shield Rush (Empire KNIGHT OF THE BLAZING SUN Melee Shield)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8011','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Taunt (Empire KNIGHT OF THE BLAZING SUN Debuff)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8010','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Judgement (Empire WARRIOR PRIEST Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8236','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Bludgeon (Empire WARRIOR PRIEST Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8240','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Castigation (Empire WARRIOR PRIEST Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8257','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Weight of Guilt (Empire WARRIOR PRIEST Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8255','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Smite (Empire WARRIOR PRIEST Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8250','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Sigmar's Fist (Empire WARRIOR PRIEST Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8253','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Divine Shock (Empire WARRIOR PRIEST Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8254','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Divine Assault (Empire WARRIOR PRIEST Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8244','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Sigmar's Radiance (Empire WARRIOR PRIEST Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8252','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Divine Aid (Empire WARRIOR PRIEST Heal)
+SET @PROTOENTRY := xxxxx; 
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8238','0',@PROTOENTRY,'','0','30','0','0','1','0','0','1',NULL);
+
+-- Divine Mend(Empire WARRIOR PRIEST Heal)
+SET @PROTOENTRY := xxxxx; 
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8239','0',@PROTOENTRY,'','0','30','0','0','1','0','0','1',NULL);
+
+-- Touch of the Divine(Empire WARRIOR PRIEST Heal AOE)
+SET @PROTOENTRY := xxxxx; 
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8247','0',@PROTOENTRY,'','0','30','0','0','1','0','0','1',NULL);
+
+-- Razor Strike (Empire WITCH HUNTER Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8081','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Fervor (Empire WITCH HUNTER Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8083','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Torment (Empire WITCH HUNTER Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8085','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Silence The Heretic (Empire WITCH HUNTER Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8100','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Absolution (Empire WITCH HUNTER Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8082','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Burn, Heretic! (Empire WITCH HUNTER Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8093','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Confess! (Empire WITCH HUNTER Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8086','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Trial By Pain (Empire WITCH HUNTER Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8087','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Snap Shot (Empire WITCH HUNTER Range )
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8080','0',@PROTOENTRY,'','0','0','0','1','1','1','0','4',NULL); 
+UPDATE `war_world`.`creature_protos` SET `Ranged` = '65' WHERE `Entry` = @PROTOENTRY; 
+
+-- Blessed Bullets of Purity ( Empire WITCH HUNTER Buff on Aggro )
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8084','0',@PROTOENTRY,'','0','0','0','0','1','1','0','1',NULL); 
+
+-- Blessed Bullets of Confession ( Empire WITCH HUNTER Buff on Aggro )
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'8099','0',@PROTOENTRY,'','0','0','0','0','1','1','0','1',NULL); 
+
+### Empire ###
+### Hight Elf ###
+
+-- Radiant Lance (Hight Elf ARCHMAGE Range )
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9237','0',@PROTOENTRY,'','0','0','0','1','1','1','0','4',NULL); 
+UPDATE `war_world`.`creature_protos` SET `Ranged` = '100' WHERE `Entry` = @PROTOENTRY; 
+
+-- Law of Conductivity (Hight Elf ARCHMAGE Range )
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9239','0',@PROTOENTRY,'','0','0','0','1','1','1','0','4',NULL); 
+UPDATE `war_world`.`creature_protos` SET `Ranged` = '100' WHERE `Entry` = @PROTOENTRY; 
+
+-- Radiant Gaze (Hight Elf ARCHMAGE Range )
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9264','0',@PROTOENTRY,'','0','0','0','1','1','1','0','4',NULL); 
+UPDATE `war_world`.`creature_protos` SET `Ranged` = '100' WHERE `Entry` = @PROTOENTRY; 
+
+-- Balance Essence (Hight Elf ARCHMAGE Range )
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9257','0',@PROTOENTRY,'','0','0','0','1','1','1','0','4',NULL); 
+UPDATE `war_world`.`creature_protos` SET `Ranged` = '100' WHERE `Entry` = @PROTOENTRY; 
+
+-- Transfer Force (Hight Elf ARCHMAGE Range Debuff)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9241','0',@PROTOENTRY,'','0','0','0','1','1','1','0','4',NULL); 
+UPDATE `war_world`.`creature_protos` SET `Ranged` = '100' WHERE `Entry` = @PROTOENTRY; 
+
+-- Searing Touch (Hight Elf ARCHMAGE Range )
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9250','0',@PROTOENTRY,'','0','0','0','1','1','1','0','4',NULL); 
+UPDATE `war_world`.`creature_protos` SET `Ranged` = '100' WHERE `Entry` = @PROTOENTRY; 
+
+-- Prismatic Shield ( Hight Elf ARCHMAGE Buff on Aggro )
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9248','0',@PROTOENTRY,'','0','0','0','0','1','1','0','1',NULL); 
+
+-- Healing Energy ( Hight Elf ARCHMAGE  Heal AOE)
+SET @PROTOENTRY := xxxxx; 
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9236','0',@PROTOENTRY,'','0','30','0','0','1','0','0','1',NULL);
+
+-- Boon of Hysh ( Hight Elf ARCHMAGE  Heal)
+SET @PROTOENTRY := xxxxx; 
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9242','0',@PROTOENTRY,'','0','30','0','0','1','0','0','1',NULL);
+
+-- Acid Arrow (Hight Elf SHADOW WARRIOR  Range Attack)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9104','10',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Broadhead Arrow (Hight Elf SHADOW WARRIOR  Range Attack)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9084','10',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Broadhead Arrow (Hight Elf SHADOW WARRIOR  Range Attack)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9084','10',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Takedown (Hight Elf SHADOW WARRIOR  Range Attack)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9087','10',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Spiral-Fletched Arrow (Hight Elf SHADOW WARRIOR  Range Attack)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9093','10',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Eagle Eye (Hight Elf SHADOW WARRIOR  Range Attack)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9082','10',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Grim Slash (Hight Elf SHADOW WARRIOR  Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9083','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Brutal Assault (Hight Elf SHADOW WARRIOR  Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9086','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Draw Blood (Hight Elf SHADOW WARRIOR  Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9091','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Quick Incision (Hight Elf SWORD MASTER  Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9004','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Blurring Shock (Hight Elf SWORD MASTER  Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9022','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Graceful Strike (Hight Elf SWORD MASTER  Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9002','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Dragon's Talon (Hight Elf SWORD MASTER  Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9006','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Ensorcelled Blow (Hight Elf SWORD MASTER  Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9010','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Dazzling Strike (Hight Elf SWORD MASTER  Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9019','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Wrath of Hoeth (Hight Elf SWORD MASTER  Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9017','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Gusting Wind (Hight Elf SWORD MASTER  Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9012','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Phantom's Blade( Hight Elf SWORD MASTER Buff on Aggro )
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9020','0',@PROTOENTRY,'','0','0','0','0','1','1','0','1',NULL); 
+
+-- Hack (Hight Elf WHITE LION  Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9160','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Coordinated Strike (Hight Elf WHITE LION  Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9163','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Lion's Fury (Hight Elf WHITE LION  Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9167','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Blindside (Hight Elf WHITE LION  Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9161','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Sundering Chop (Hight Elf WHITE LION  Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9165','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Shattering Blow (Hight Elf WHITE LION  Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9171','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Baiting Strike (Hight Elf WHITE LION  Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9166','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Cleave Limb (Hight Elf WHITE LION  Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9170','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+### Hight Elf ###
+### Dark Elf ###
+
+-- Pitiless Strike (Dark Elf BLACK GUARD  Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9335','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Crippling Anger (Dark Elf BLACK GUARD  Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9318','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Murderous Wrath(Dark Elf BLACK GUARD  Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9320','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Horrific Wound(Dark Elf BLACK GUARD  Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9329','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Hateful Strike(Dark Elf BLACK GUARD  Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9315','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Spiteful Slam(Dark Elf BLACK GUARD  Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9321','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Mind Killer(Dark Elf BLACK GUARD  Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9317','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Brutal Smash(Dark Elf BLACK GUARD  Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9324','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Crushing Anger(Dark Elf BLACK GUARD  Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9327','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Feeding On Weakness(Dark Elf BLACK GUARD  Debuff)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9316','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Shield of Rage( Dark Elf BLACK GUARD Buff on Aggro )
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9336','0',@PROTOENTRY,'','0','0','0','0','1','1','0','1',NULL); 
+
+-- Fist of Khaine(Dark Elf DISCIPLE OF KHANE  Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9568','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Cleave Soul (Dark Elf DISCIPLE OF KHANE  Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9552','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Lacerate (Dark Elf DISCIPLE OF KHANE  Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9551','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Flay (Dark Elf DISCIPLE OF KHANE  Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9549','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Essence Lash (Dark Elf DISCIPLE OF KHANE  Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9566','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Rend Soul (Dark Elf DISCIPLE OF KHANE  Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9554','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Consume Strength (Dark Elf DISCIPLE OF KHANE  Debuff)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9560','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Restore Essence ( Dark Elf DISCIPLE OF KHANE  Heal)
+SET @PROTOENTRY := xxxxx; 
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9548','0',@PROTOENTRY,'','0','30','0','0','1','0','0','1',NULL);
+
+-- Khaine's Invigoration ( Dark Elf DISCIPLE OF KHANE  Heal)
+SET @PROTOENTRY := xxxxx; 
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9553','0',@PROTOENTRY,'','0','30','0','0','1','0','0','1',NULL);
+
+-- Chillwind (Dark Elf SORCERER Range)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9471','0',@PROTOENTRY,'','0','0','0','1','1','1','0','4',NULL); 
+UPDATE `war_world`.`creature_protos` SET `Ranged` = '100' WHERE `Entry` = @PROTOENTRY; 
+
+-- Doombolt (Dark Elf SORCERER Range)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9470','0',@PROTOENTRY,'','0','0','0','1','1','1','0','4',NULL); 
+UPDATE `war_world`.`creature_protos` SET `Ranged` = '100' WHERE `Entry` = @PROTOENTRY; 
+
+-- Gloomburst (Dark Elf SORCERER Range)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9472','0',@PROTOENTRY,'','0','0','0','1','1','1','0','4',NULL); 
+UPDATE `war_world`.`creature_protos` SET `Ranged` = '100' WHERE `Entry` = @PROTOENTRY; 
+
+-- Arctic Blast (Dark Elf SORCERER Range)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9479','0',@PROTOENTRY,'','0','0','0','1','1','1','0','4',NULL); 
+UPDATE `war_world`.`creature_protos` SET `Ranged` = '100' WHERE `Entry` = @PROTOENTRY; 
+
+-- Frostbite (Dark Elf SORCERER Range)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9482','0',@PROTOENTRY,'','0','0','0','1','1','1','0','4',NULL); 
+UPDATE `war_world`.`creature_protos` SET `Ranged` = '100' WHERE `Entry` = @PROTOENTRY; 
+
+-- Slice (Dark Elf WITCH ELF Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9398','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Envenomed Blade (Dark Elf WITCH ELF Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9403','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Kiss of Death (Dark Elf WITCH ELF Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9407','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Enfeebling Strike (Dark Elf WITCH ELF Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9401','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Agonizing Wound (Dark Elf WITCH ELF Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9408','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Throat Slitter (Dark Elf WITCH ELF Melee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'9409','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+### Dark Elf ###
+### Human ###
+
+-- Slasha (KNIGHT OF THE BLAZING SUN Melee)
 SET @PROTOENTRY := xxxxx;
 DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
@@ -466,24 +1362,6 @@ DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
 (@PROTOENTRY,'606','60',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
 
--- Scourge (Chaos Raven Zealot)
-SET @PROTOENTRY := xxxxx;
-DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
-INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
-(@PROTOENTRY,'8548','0',@PROTOENTRY,'','0','0','0','1','1','1','0','4',NULL); 
-UPDATE `war_world`.`creature_protos` SET `Ranged` = '100' WHERE `Entry` = @PROTOENTRY; 
-
--- Warp Reality (Chaos Raven Zealot)
-SET @PROTOENTRY := xxxxx;
-DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
-INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
-(@PROTOENTRY,'8553','30',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
-
--- Tzeentch's Cordial (Chaos Raven Zealot)
-SET @PROTOENTRY := xxxxx; 
-DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
-INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
-(@PROTOENTRY,'8558','0',@PROTOENTRY,'','0','0','0','0','1','1','0','1',NULL); 
 
 --  Ranpage (Buff) Rage
 SET @PROTOENTRY := xxxxx;
