@@ -5,6 +5,12 @@ DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
 (@PROTOENTRY,'12452','10',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
 
+-- Ethereal Hand
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'12451','10',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
 -- Banshee Wail
 SET @PROTOENTRY := xxxxx;
 DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
@@ -1533,7 +1539,7 @@ DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
 (@PROTOENTRY,'5436','0',@PROTOENTRY,'','0','25','0','0','0','1','0','1',NULL); 
 
--- (Kick with Debuff Dark MAgic)
+-- Witch (Kick with Debuff Dark MAgic)
 SET @PROTOENTRY := xxxxx;
 DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
@@ -2027,7 +2033,7 @@ DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
 (@PROTOENTRY,'439','20',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
 
--- Impale
+-- Impale (Lion)
 SET @PROTOENTRY := xxxxx;
 DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
@@ -2075,13 +2081,13 @@ DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
 (@PROTOENTRY,'12381','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
 
--- Maul
+-- Maul (Bear,Lion)
 SET @PROTOENTRY := xxxxx;
 DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
 (@PROTOENTRY,'48','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
 
--- Gut Ripper
+-- Gut Ripper (Bear,Lion)
 SET @PROTOENTRY := xxxxx;
 DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
@@ -2356,6 +2362,8 @@ INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creatu
 
 EMOTES:
 
+36 - химичет
+
 103 - Mining
 
 51 - sit on ground
@@ -2364,7 +2372,9 @@ EMOTES:
 
 117 - sit on chair
 
-12 - kick
+12 - kick Aggro
+
+7 - scream and kick
 
 4 - funny goblin CHEER!!
 
@@ -2379,6 +2389,8 @@ EMOTES:
 55 - Sleeping
 
 78 - funny Goblin
+
+53 - fear covering
 
 150  - reading book and talk
 
