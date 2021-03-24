@@ -1489,7 +1489,7 @@ UPDATE `war_world`.`creature_protos` SET `Ranged` = '100' WHERE `Entry` = @PROTO
 SET @PROTOENTRY := xxxxx;
 DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
-(@PROTOENTRY,'54','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+(@PROTOENTRY,'54','5',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
 
 -- Daemonic Consumption (Pink Horror of Tzinch)
 SET @PROTOENTRY := xxxxx;
@@ -1687,7 +1687,7 @@ DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
 (@PROTOENTRY,'12171','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
 
--- Scorching Flame (Flame Breath)
+-- Scorching Flame (Flame Breath) Dragon
 SET @PROTOENTRY := xxxxx;
 DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
@@ -1705,7 +1705,7 @@ DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
 (@PROTOENTRY,'12571','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
 
--- Trampling Claws (One Shred,Beast,Troll)
+-- Trampling Claws (One Shred,Beast,Troll) Spite
 SET @PROTOENTRY := xxxxx;
 DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
@@ -2021,7 +2021,7 @@ DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
 (@PROTOENTRY,'12053','15',@PROTOENTRY,'','0','0','0','1','1','0','0','1',NULL); 
 
--- Claw Sweep (Red Rend)
+-- Claw Sweep (Red Rend) Spite
 SET @PROTOENTRY := xxxxx;
 DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
@@ -2039,13 +2039,13 @@ DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
 (@PROTOENTRY,'8399','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL);
 
--- Bite (Spider)
+-- Bite (Spider, Bats)
 SET @PROTOENTRY := xxxxx;
 DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
 (@PROTOENTRY,'41','10',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
 
--- Poisoned Spine
+-- Poisoned Spine (Spider)
 SET @PROTOENTRY := xxxxx;
 DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
@@ -2063,7 +2063,7 @@ DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
 (@PROTOENTRY,'4459','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
 
--- Fang And Claw (Better for Bats)
+-- Fang And Claw (Lions, Tigers) Cats
 SET @PROTOENTRY := xxxxx;
 DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
@@ -2074,6 +2074,12 @@ SET @PROTOENTRY := xxxxx;
 DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
 (@PROTOENTRY,'12017','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Bat Screech (Bats)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'12012','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
 
 -- Eye Peak (Birds)
 SET @PROTOENTRY := xxxxx;
@@ -2129,7 +2135,7 @@ DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
 (@PROTOENTRY,'12581','12',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
 
--- Swooping Bite (Birds,Basilisks)
+-- Swooping Bite (Birds,Basilisks,Bat)
 SET @PROTOENTRY := xxxxx;
 DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
@@ -2154,7 +2160,7 @@ INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creatu
 (@PROTOENTRY,'5627','12',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
 
 
- -- Ripping Claws (RED Shred,Trolls,Squigs)
+ -- Ripping Claws (RED Shred,Trolls,Squigs,Spite)
 SET @PROTOENTRY := xxxxx;
 DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
