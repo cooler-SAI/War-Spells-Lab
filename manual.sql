@@ -1,4 +1,10 @@
 ## Ghost ##
+-- Earsplitting Howl (Banshee)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'12612','30',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
 -- Ethereal Chill
 SET @PROTOENTRY := xxxxx;
 DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
@@ -1924,6 +1930,12 @@ DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
 (@PROTOENTRY,'12041','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL);
 
+-- Corrosive Vomit ( Nurgle Demon )
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'5303','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL);
+
 -- Ursine Roar (Troll,Gork,Vyvern)
 SET @PROTOENTRY := xxxxx;
 DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
@@ -2015,6 +2027,12 @@ DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
 (@PROTOENTRY,'438','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
 
+-- Gore 2(Boar)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'12051','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
 -- Bore's Rage (Boar)
 SET @PROTOENTRY := xxxxx;
 DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
@@ -2039,12 +2057,6 @@ DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
 (@PROTOENTRY,'8399','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL);
 
--- Bite (Spider, Bats)
-SET @PROTOENTRY := xxxxx;
-DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
-INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
-(@PROTOENTRY,'41','10',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
-
 -- Poisoned Spine (Spider)
 SET @PROTOENTRY := xxxxx;
 DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
@@ -2068,6 +2080,12 @@ SET @PROTOENTRY := xxxxx;
 DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
 (@PROTOENTRY,'47','15',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
+
+-- Bite (Spider, Bats)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'41','10',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
 
 -- Bat Screech (Bats)
 SET @PROTOENTRY := xxxxx;
@@ -2128,6 +2146,12 @@ SET @PROTOENTRY := xxxxx;
 DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
 INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
 (@PROTOENTRY,'12442','10',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL);  
+
+-- WebBolt (Spider)
+SET @PROTOENTRY := xxxxx;
+DELETE FROM `creature_abilities` WHERE  `ProtoEntry`=@PROTOENTRY;
+INSERT INTO `creature_abilities` (`ProtoEntry`, `AbilityId`, `Cooldown`, `creature_abilities_ID`, `Text`, `TimeStart`, `ActivateAtHealthPercent`, `DisableAtHealthPercent`, `AbilityCycle`, `Active`, `ActivateOnCombatStart`, `RandomTarget`, `TargetFocus`, `MinRange`) values
+(@PROTOENTRY,'4462','10',@PROTOENTRY,'','0','0','0','1','1','0','0','4',NULL); 
 
 -- Chomp (Bite,Fangs)
 SET @PROTOENTRY := xxxxx;
